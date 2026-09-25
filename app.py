@@ -200,11 +200,9 @@ def chat():
     })
 
 
+# Create database when the application starts
+create_database()
+
 # Start Flask
 if __name__ == "__main__":
-
-    create_database()
-
     app.run(debug=True)
-if __name__ == "__main__":
-    app.run()   
